@@ -17,7 +17,7 @@ class change_admin_state(StatesGroup):
 def change_admin(id):
     with open("admin.txt", "w") as file:
         file.write(str(id))
-change_admin(5165396993)
+change_admin("admin_id")
 def get_admin():
     with open("admin.txt", "r") as file:
         for i in file:
